@@ -40,4 +40,5 @@ jobs:
     inputs:
       command: push
       nuGetFeedType: external
+      publishFeedCredentials: 'berger.extensions.json-nuget'
 ...
