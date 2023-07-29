@@ -18,7 +18,7 @@ jobs:
     clean: true
     fetchTags: false
   - task: UseDotNet@2
-    displayName: Use .NET Core sdk 7.x
+    displayName: dotnet core sdk 7.x use
     inputs:
       version: 7.x
   - task: DotNetCoreCLI@2
@@ -36,9 +36,9 @@ jobs:
       command: pack
       versioningScheme: byBuildNumber
   - task: NuGetCommand@2
-    displayName: NuGet push
+    displayName: nuget push
     inputs:
       command: push
       nuGetFeedType: external
-      publishFeedCredentials: 'berger.extensions.json-nuget'
+      publishFeedCredentials: 'berger.extensions.nuget'
 ...
