@@ -10,7 +10,7 @@ resources:
     ref: refs/heads/dev
 jobs:
 - job: Job_1
-  displayName: Berger.Extensions.Json-Agent
+  displayName: Berger.Extensions.Newtonsoft-Agent
   pool:
     vmImage: windows-latest
   steps:

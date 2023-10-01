@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Berger.Extensions.Json
+namespace Berger.Extensions.Newtonsoft
 {
     public static class SerializationHelper
     {
