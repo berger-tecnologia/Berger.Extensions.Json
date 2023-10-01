@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.Json", "Berger.Extensions.Json\Berger.Extensions.Json.csproj", "{51E5C6F8-E32C-41B3-A7CA-0BD5EE78473E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Berger.Extensions.Newtonsoft", "Berger.Extensions.Newtonsoft\Berger.Extensions.Newtonsoft.csproj", "{51E5C6F8-E32C-41B3-A7CA-0BD5EE78473E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{2343CADD-26FD-47CE-86BB-4060CF234377}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{6185E9F4-91EE-4903-99CA-7DB1442CC4AA}"
 	ProjectSection(SolutionItems) = preProject
-		..\build\Berger.Extensions.Json.yml = ..\build\Berger.Extensions.Json.yml
+		..\build\Berger.Extensions.Newtonsoft.yml = ..\build\Berger.Extensions.Newtonsoft.yml
 	EndProjectSection
 EndProject
 Global
