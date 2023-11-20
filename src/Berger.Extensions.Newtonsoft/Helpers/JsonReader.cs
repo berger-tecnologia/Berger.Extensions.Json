@@ -17,9 +17,16 @@ namespace Berger.Extensions.Newtonsoft
 
             foreach (var file in files)
             {
-                var json = File.ReadAllText(file);
+                try
+                {
+                    var json = File.ReadAllText(file);
 
-                results.Add(JsonConvert.DeserializeObject<T>(json));
+                    results.Add(JsonConvert.DeserializeObject<T>(json));
+                }
+                catch (global::System.Exception)
+                {
+                    throw;
+                }
             }
 
             return results;
