@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Berger.Extensions.Newtonsoft
 {
@@ -21,7 +22,10 @@ namespace Berger.Extensions.Newtonsoft
                 {
                     var json = File.ReadAllText(file);
 
-                    results.Add(JsonConvert.DeserializeObject<T>(json));
+                    if(!string.IsNullOrEmpty(json))
+                    {
+                        results.Add(JsonConvert.DeserializeObject<T>(json));
+                    }                    
                 }
                 catch (global::System.Exception)
                 {
