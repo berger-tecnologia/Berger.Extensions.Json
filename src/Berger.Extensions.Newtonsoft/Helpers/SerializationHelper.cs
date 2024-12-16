@@ -18,6 +18,17 @@ namespace Berger.Extensions.Newtonsoft
 
             return Deserialize<T>(content);
         }
+        public static T Deserialize<T>(this string json, IContractResolverFactory factory)
+        {
+            var resolver = factory.GetResolver<T>();
+
+            var settings = new JsonSerializerSettings
+            {
+                ContractResolver = resolver
+            };
+
+            return JsonConvert.DeserializeObject<T>(json, settings);
+        }
         public static T Deserialize<T>(this string json)
         {
             return JsonConvert.DeserializeObject<T>(json);
