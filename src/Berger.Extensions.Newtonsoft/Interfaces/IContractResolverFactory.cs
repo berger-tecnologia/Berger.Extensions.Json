@@ -4,7 +4,6 @@ namespace Berger.Extensions.Newtonsoft
 {
     public interface IContractResolverFactory
     {
-        //IContractResolver GetResolver<T>();
-        IContractResolver GetResolver(string key);
+        IContractResolver GetResolver(string identifier);
     }
 }
